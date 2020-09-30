@@ -3,6 +3,7 @@ from datetime import datetime
 import string
 from random import choices
 
+
 # Class for logic and linking.
 class LinkUrl(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -15,10 +16,17 @@ class LinkUrl(db.Model):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.short_url = self.generate_url()
+
     # Generate short url
     def generate_url(self):
-        whole_set = string.digits + string.ascii_letters
-        short_url = ''.join(choices(whole_set, k=3))    # Chooses 3 characters. That's how short our URL will be.
+        whole_set = (string.digits 
+                     + string.ascii_letters)
+        short_url = ''.join(
+            choices(
+                whole_set, 
+                k=3
+            )
+        )    # Chooses 3 characters. That's how short our URL will be.
         # Make sure the generate url is unique. If not, recurse over this function.
         gen_link = self.query.filter_by(short_url=short_url).first()
         if gen_link:
