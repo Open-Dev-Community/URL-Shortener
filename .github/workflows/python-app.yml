@@ -36,11 +36,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Lint with flake8
-      run: |
-        pip install flake8
-        flake8
-
     - name: Lint with Pylint
       run: |
         pip install pylint
@@ -50,3 +45,17 @@ jobs:
       run: |
         pip install pytest
         pytest
+
+    - uses: sarisia/actions-status-discord@v1
+      if: always()
+      with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        status: ${{ job.status }}
+        title: "deploy"
+        description: "Build and deploy to GitHub Pages"
+        nofail: false
+        nocontext: false
+        noprefix: false
+        color: 0x0000ff
+        username: GitHub Actions
+        avatar_url: ${{ secrets.AVATAR_URL }}
