@@ -12,6 +12,19 @@ jobs:
         python-version: [3.7]
 
     steps:
+    - uses: sarisia/actions-status-discord@v1
+      if: always()
+      with:
+            webhook: ${{ secrets.DISCORD_WEBHOOK }}
+            status: ${{ job.status }}
+            title: "deploy"
+            description: "Build and deploy to GitHub Pages"
+            nofail: false
+            nocontext: false
+            noprefix: false
+            color: 0x0000ff
+            username: GitHub Actions
+            avatar_url: ${{ secrets.AVATAR_URL }}
     - uses: actions/checkout@v1
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
@@ -26,14 +39,14 @@ jobs:
     - name: Lint with flake8
       run: |
         pip install flake8
-        flake8 own_practice/
+        flake
 
     - name: Lint with Pylint
       run: |
         pip install pylint
-        pylint -v own_practice/
+        pylint
 
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest -vs .github/python_ci/test.py
+        pytest
