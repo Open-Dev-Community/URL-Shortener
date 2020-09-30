@@ -22,7 +22,9 @@ def add_link():
     link = LinkUrl(original_url=original_url)
     db.session.add(link)
     db.session.commit()
-    return render_template('link_added.html', new_url=link.short_url, original_url=link.original_url)
+    return render_template('link_added.html', 
+                           new_url=link.short_url, 
+                           original_url=link.original_url)
 
 
 @short_blp.errorhandler(404)
