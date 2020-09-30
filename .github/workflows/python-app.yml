@@ -34,6 +34,10 @@ jobs:
     - name: Python Runner
       run: |
         python *.py
+        
+    - name: Python url_shortener test
+      run: |
+        python url_shortener/*.py
 
     - uses: sarisia/actions-status-discord@v1
       if: always()
