@@ -31,4 +31,11 @@ Languages : Python, HTML, CSS, Bootstrap.
 
 **REMEMBER :** Every time you open your local repository to add changes, make sure to pull the code from the upstream.
 
+### SETTING UP THE PROJECT
+
+1. Open terminal or command prompt and ```cd``` to the correct directory.
+2. Set up a virtual environment : 1. ```virtualenv venv``` --> 2. ```venv\Scripts\activate```
+3. Install all dependencies : ```pip install -r requirements.txt```
+4. Run the flask app : ```flask run```
+
 HAPPY CONTRIBUTING !!
