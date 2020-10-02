@@ -1,6 +1,6 @@
-![maintenance](https://img.shields.io/maintenance/yes/2020) [![license_badge](https://img.shields.io/github/license/Open-Dev-Community/URL-Shortener)](https://github.com/Open-Dev-Community/URL-Shortener/blob/master/LICENSE) 
-
-[![issues](https://img.shields.io/github/issues/Open-Dev-Community/URL-Shortener)](https://github.com/Open-Dev-Community/URL-Shortener/issues) [![Forks](https://img.shields.io/github/forks/Open-Dev-Community/URL-Shortener?style=social)](https://github.com/Open-Dev-Community/URL-Shortener/network/members) [![Stargazers](https://img.shields.io/github/stars/Open-Dev-Community/URL-Shortener?style=social)](https://github.com/Open-Dev-Community/URL-Shortener/stargazers)
+![maintenance](https://img.shields.io/maintenance/yes/2020) [![license_badge](https://img.shields.io/github/license/Open-Dev-Community/URL-Shortener)](https://github.com/Open-Dev-Community/URL-Shortener/blob/master/LICENSE) [![issues](https://img.shields.io/github/issues/Open-Dev-Community/URL-Shortener)](https://github.com/Open-Dev-Community/URL-Shortener/issues)
+ 
+[![Forks](https://img.shields.io/github/forks/Open-Dev-Community/URL-Shortener?style=social)](https://github.com/Open-Dev-Community/URL-Shortener/network/members) [![Stargazers](https://img.shields.io/github/stars/Open-Dev-Community/URL-Shortener?style=social)](https://github.com/Open-Dev-Community/URL-Shortener/stargazers)
 
 
 <p align="center">
