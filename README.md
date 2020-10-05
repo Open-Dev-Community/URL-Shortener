@@ -8,6 +8,12 @@
   <img src="https://embed-fastly.wistia.com/deliveries/49bd387c40e2c5aada92abdf973bc46d.webp?image_crop_resized=960x540">
 
 </p>
+<p align = "center">
+    <img alt="OpenDevCommunity" src="https://img.shields.io/badge/MadeBy-OpenDevCommunity-orange"></a>
+    <a href="https://github.com/Open-Dev-Community/Tweet_data_hunter" alt="Contributors">
+    <img src="https://img.shields.io/github/contributors/Open-Dev-Community/Tweet_data_hunter"/><a>
+    <img src = "https://github.com/Open-Dev-Community/Basic-Python-Scripts/workflows/Python%20application/badge.svg"/>
+</p>
 
 
 ### ABOUT THE PROJECT
