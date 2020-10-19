@@ -30,6 +30,6 @@ Please add/delete options that are not relevant.
 
 :star2: Star it :fork_and_knife:Fork it :handshake: Contribute to it!
 
-Discord server  - https://discord.gg/FXyh2S3
+Discord server  - https://discord.gg/e47wmTW
 
 Happy Coding,
