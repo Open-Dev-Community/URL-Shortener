@@ -19,14 +19,10 @@ class LinkUrl(db.Model):
 
     # Generate short url
     def generate_url(self):
-        whole_set = (string.digits 
-                     + string.ascii_letters)
-        short_url = ''.join(
-            choices(
-                whole_set, 
-                k=3
-            )
-        )    # Chooses 3 characters. That's how short our URL will be.
+        whole_set = string.digits + string.ascii_letters
+        short_url = "".join(
+            choices(whole_set, k=3)
+        )  # Chooses 3 characters. That's how short our URL will be.
         # Make sure the generate url is unique. If not, recurse over this function.
         gen_link = self.query.filter_by(short_url=short_url).first()
         if gen_link:
